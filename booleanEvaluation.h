@@ -10,5 +10,7 @@
 void printNames( );
 char *evaluatePostfix( char *str );
 char *postfixToInfix( char *str );
+char *stringcat( char *str1, char *str2 );
+char *stringcat2( char *str1, char *str2, char *str3 );
 
 #endif
