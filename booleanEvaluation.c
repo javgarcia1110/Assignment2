@@ -187,10 +187,16 @@ char *postfixToInfix( char *str )
 
 char *concatenate( char *str1, char *str2){
     char *dest;
+    	
+	
+	
     dest = malloc(strlen(str1)+strlen(str2)+1);
     dest[0] = '\0';
     strcat(dest, str1);
     strcat(dest, str2);
+    
+	
+	
 	
     free(str1);
     free(str2);
