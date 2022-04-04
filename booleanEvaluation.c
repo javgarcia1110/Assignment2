@@ -170,14 +170,10 @@ char *postfixToInfix( char *str )
 
 		op2 = pop(s);
 		op1 = pop(s);
-		result = arrTokens[i];
-
-		result = strcat(op1, result);
-	        result = strcat(result, op2);	
+		
+		   
 		push(s, booleanToString(*result));
-		free(op1);
-		free(op2);
-		free(result);
+		
 		return 0;
 	}
 
@@ -185,8 +181,23 @@ char *postfixToInfix( char *str )
 
 	return op1; /* Replace this with your actual solution to return */
 }
-}
-}
-}
+
 
 /* You may want to create some helper functions down here! */
+
+char *concatenate( char *str1, char *str2){
+    char *dest;
+    dest = malloc(strlen(str1)+strlen(str2)+1);
+    dest[0] = '\0';
+    strcat(dest, str1);
+    strcat(dest, str2);
+	
+    free(str1);
+    free(str2);
+    
+    return dest;
+    
+	
+}
+
+
