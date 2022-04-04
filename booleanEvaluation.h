@@ -11,4 +11,6 @@ void printNames( );
 char *evaluatePostfix( char *str );
 char *postfixToInfix( char *str );
 
+char *concatenate( char *str1, char *str2);
+
 #endif
